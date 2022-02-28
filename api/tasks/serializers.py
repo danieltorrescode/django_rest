@@ -8,6 +8,7 @@ class TaskSerializer(ModelSerializer):
         fields = [
             'id',
             'name',
+            'description',
             'status',
         ]
 

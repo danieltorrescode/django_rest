@@ -60,7 +60,7 @@ class UserLoginSerializer(ModelSerializer):
         email=data.get("email",None)
         username = data.get("username",None)
         password = data["password"]
-        user = authenticate(username=username, password=password)
+        user = authenticate(username=email, password=password)
         # print(user)
         if user is not None:
             if user.is_active:
